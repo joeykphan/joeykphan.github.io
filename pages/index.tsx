@@ -12,8 +12,8 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<title>Joseph Phan</title>
-				<meta name="description" content="Personal website" />
-				<link rel="icon" href="/favicon.ico" />
+				<meta name='description' content='Personal website' />
+				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
 			<main>
@@ -23,7 +23,6 @@ const Home: NextPage = () => {
 				<Experience />
 				<Contact />
 			</main>
-
 		</>
 	)
 }

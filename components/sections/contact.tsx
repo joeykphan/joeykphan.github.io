@@ -1,14 +1,10 @@
-import React from "react"
-import {
-	Box,
-	Text,
-	Center,
-} from "@chakra-ui/react"
+import React from 'react'
+import { Box, Text, Center } from '@chakra-ui/react'
 
 const Contact = () => {
 	return (
 		<Box
-			id="contact"
+			id='contact'
 			minH='100vh'
 			bg='grey'
 			display='flex'
