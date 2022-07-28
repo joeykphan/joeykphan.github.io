@@ -1,9 +1,9 @@
 import {
     Box,
+    Button,
     Flex,
     Divider,
     Stack,
-    Text,
     useDisclosure,
 } from '@chakra-ui/react'
 import { Link } from 'react-scroll'
@@ -24,7 +24,7 @@ const Navbar = () => {
                 top={0}
                 right={0}
                 left={0}
-                bg="white"
+                bg="#7289da"
                 zIndex={1}
             >
                 <Flex
@@ -37,83 +37,55 @@ const Navbar = () => {
                     color="black"
                 >
                     <Flex align="center" mr={2}>
-                        <Link
-                            activeClass="active"
-                            to="whoami"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            {/* <Text as={'a'} cursor="pointer" _hover={{ color: 'blue' }}> */}
-                            Joseph Phan
-                            {/* </Text> */}
+                        <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
+                            <Button colorScheme='messenger' size='lg'>
+                                Joseph Phan
+                            </Button>
                         </Link>
                     </Flex>
 
-                    <Box
-                        display={{ base: 'block', md: 'none' }}
-                        onClick={handleToggle}
-                    >
-                        <HamburgerIcon />
+                    <Box display={{ base: 'block', md: 'none' }} onClick={handleToggle}>
+                        <Button colorScheme='messenger' variant='outline'>
+                            <HamburgerIcon />
+                        </Button>
                     </Box>
 
                     <Box>
                         <Stack
-                            spacing={12}
+                            spacing={4}
                             direction={{ base: 'column', md: 'row' }}
                             display={{
-                                base: isOpen ? 'block' : 'none',
+                                base: isOpen ? 'grid' : 'none',
                                 md: 'flex',
                             }}
                             width={{ base: 'full', md: 'auto' }}
                             alignItems="center"
                             flexGrow={1}
-                            mt={{ base: 4, md: 0 }}
+                            mt={{ base: 225, md: 0 }}
                         >
-                            <Link
-                                activeClass="active"
-                                to="whoami"
-                                spy={true}
-                                smooth={true}
-                                duration={1000}
-                            >
-                                {/* <Text as={'a'} cursor="pointer" _hover={{ color: 'blue' }}> */}
+                            <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
+                                <Button colorScheme='blue' size='md'>
                                 0. Home
-                                {/* </Text> */}
+                                </Button>
                             </Link>
-                            <Link
-                                activeClass="active"
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                duration={1000}
-                            >
-                                {/* <Text as={'a'} cursor="pointer" _hover={{ color: 'blue' }}> */}
+                            <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
+                                <Button colorScheme='blue' size='md'>
                                 1. About
-                                {/* </Text> */}
+                                </Button>
                             </Link>
-                            <Link
-                                activeClass="active"
-                                to="experience"
-                                spy={true}
-                                smooth={true}
-                                duration={1000}
-                            >
-                                {/* <Text as={'a'} cursor="pointer" _hover={{ color: 'blue' }}> */}
+                            <Link activeClass="active" to="experience" spy={true} smooth={true} duration={1000}>
+                                <Button colorScheme='blue' size='md'>
                                 2. Experience
-                                {/* </Text> */}
+                                </Button>
                             </Link>
-                            <Link
-                                activeClass="active"
-                                to="contact"
-                                spy={true}
-                                smooth={true}
-                                duration={1000}
-                            >
-                                {/* <Text as={'a'} cursor="pointer" _hover={{ color: 'blue' }}> */}
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
+                                <Button colorScheme='blue' size='md'>
                                 3. Contact
-                                {/* </Text> */}
+                                </Button>
                             </Link>
+                            <Button colorScheme='blue' size='md' variant='outline'>
+                                Resume
+                            </Button>
                         </Stack>
                     </Box>
                 </Flex>
