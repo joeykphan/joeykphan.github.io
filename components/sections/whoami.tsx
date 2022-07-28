@@ -6,7 +6,7 @@ const Whoami = () => {
 		<Box
 			id='whoami'
 			minH='100vh'
-			bg='grey'
+			bg='messenger.100'
 			display='flex'
 			flexDirection='column'
 			justifyContent='center'

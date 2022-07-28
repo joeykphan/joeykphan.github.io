@@ -6,7 +6,7 @@ const Experience = () => {
 		<Box
 			id='experience'
 			minH='100vh'
-			bg='grey'
+			bg='messenger.300'
 			display='flex'
 			flexDirection='column'
 			justifyContent='center'

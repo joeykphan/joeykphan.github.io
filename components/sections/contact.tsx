@@ -6,7 +6,7 @@ const Contact = () => {
 		<Box
 			id='contact'
 			minH='100vh'
-			bg='grey'
+			bg='messenger.400'
 			display='flex'
 			flexDirection='column'
 			justifyContent='center'

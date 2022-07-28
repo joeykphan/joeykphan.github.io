@@ -15,7 +15,7 @@ const About = () => {
 		<Box
 			id='about'
 			minH='100vh'
-			bg='grey'
+			bg='messenger.200'
 			display='flex'
 			flexDirection='column'
 			justifyContent='center'
