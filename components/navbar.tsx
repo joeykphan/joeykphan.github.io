@@ -24,7 +24,7 @@ const Navbar = () => {
                 top={0}
                 right={0}
                 left={0}
-                bg="#7289da"
+                bg="#232530"
                 zIndex={1}
             >
                 <Flex
@@ -38,14 +38,14 @@ const Navbar = () => {
                 >
                     <Flex align="center" mr={2}>
                         <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
-                            <Button colorScheme='messenger' size='lg'>
+                            <Button bgColor={"#E95379"} size='lg'>
                                 Joseph Phan
                             </Button>
                         </Link>
                     </Flex>
 
                     <Box display={{ base: 'block', md: 'none' }} onClick={handleToggle}>
-                        <Button colorScheme='messenger' variant='outline'>
+                        <Button bgColor={"#E95379"} variant='outline'>
                             <HamburgerIcon />
                         </Button>
                     </Box>
@@ -64,26 +64,26 @@ const Navbar = () => {
                             mt={{ base: 225, md: 0 }}
                         >
                             <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
-                                <Button colorScheme='blue' size='md'>
+                                <Button bgColor={"#E95379"} size='md'>
                                 0. Home
                                 </Button>
                             </Link>
                             <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
-                                <Button colorScheme='blue' size='md'>
+                                <Button bgColor={"#E95379"} size='md'>
                                 1. About
                                 </Button>
                             </Link>
                             <Link activeClass="active" to="experience" spy={true} smooth={true} duration={1000}>
-                                <Button colorScheme='blue' size='md'>
+                                <Button bgColor={"#E95379"} size='md'>
                                 2. Experience
                                 </Button>
                             </Link>
                             <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
-                                <Button colorScheme='blue' size='md'>
+                                <Button bgColor={"#E95379"} size='md'>
                                 3. Contact
                                 </Button>
                             </Link>
-                            <Button colorScheme='blue' size='md' variant='outline'>
+                            <Button bgColor={"#E95379"} size='md' variant='outline'>
                                 Resume
                             </Button>
                         </Stack>

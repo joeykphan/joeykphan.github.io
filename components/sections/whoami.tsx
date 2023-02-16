@@ -6,25 +6,25 @@ const Whoami = () => {
 		<Box
 			id='whoami'
 			minH='100vh'
-			bg='messenger.100'
+			bg='#232530'
 			display='flex'
 			flexDirection='column'
 			justifyContent='center'
 			alignItems='center'
 		>
-			<Text color='black' fontSize='4xl'>
-				$ whoami
+			<Text color='#29D398' fontSize='4xl'>
+				~ $ whoami
 			</Text>
-			<Text color='black' fontSize='4xl'>
+			<Text color='#F09383' fontSize='4xl'>
 				Hi, my name is
 			</Text>
-			<Text color='black' fontSize='4xl'>
+			<Text color='#E95678' fontSize='6xl'>
 				Joseph Phan
 			</Text>
-			<Text color='black' fontSize='4xl'>
-				I build things.
+			<Text color='#F09383' fontSize='4xl'>
+				Software Engineer | Fullstack Web Developer | Programmer
 			</Text>
-			<Text color='black' fontSize='4xl'>
+			<Text color='#F09383' fontSize='4xl'>
 				I&apos;m a software engineer that builds all kinds of software.
 			</Text>
 		</Box>
