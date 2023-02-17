@@ -5,6 +5,7 @@ import {
     Divider,
     Stack,
     useDisclosure,
+    Text,
 } from '@chakra-ui/react'
 import { Link } from 'react-scroll'
 import React from 'react'
@@ -38,9 +39,9 @@ const Navbar = () => {
                 >
                     <Flex align="center" mr={2}>
                         <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
-                            <Button bgColor={"#E95379"} size='lg'>
-                                Joseph Phan
-                            </Button>
+                            {/* <Button bgColor={"#E95379"} size='lg'> */}
+                                <Text color={"#E95379"} fontSize='lg' >Joseph Phan</Text>
+                            {/* </Button> */}
                         </Link>
                     </Flex>
 
@@ -64,28 +65,28 @@ const Navbar = () => {
                             mt={{ base: 225, md: 0 }}
                         >
                             <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
-                                <Button bgColor={"#E95379"} size='md'>
-                                0. Home
-                                </Button>
+                                {/* <Button bgColor={"#E95379"} size='md'> */}
+                                <Text color={"#E95379"} fontSize='lg' >0. Home</Text>
+                                {/* </Button> */}
                             </Link>
                             <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
-                                <Button bgColor={"#E95379"} size='md'>
-                                1. About
-                                </Button>
+                                {/* <Button bgColor={"#E95379"} size='md'> */}
+                                <Text color={"#E95379"} fontSize='lg' >1. About</Text>
+                                {/* </Button> */}
                             </Link>
                             <Link activeClass="active" to="experience" spy={true} smooth={true} duration={1000}>
-                                <Button bgColor={"#E95379"} size='md'>
-                                2. Experience
-                                </Button>
+                                {/* <Button bgColor={"#E95379"} size='md'> */}
+                                <Text color={"#E95379"} fontSize='lg' >2. Experience</Text>
+                                {/* </Button> */}
                             </Link>
                             <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
-                                <Button bgColor={"#E95379"} size='md'>
-                                3. Contact
-                                </Button>
+                                {/* <Button bgColor={"#E95379"} size='md'> */}
+                                <Text color={"#E95379"} fontSize='lg' >3. Contact</Text>
+                                {/* </Button> */}
                             </Link>
-                            <Button bgColor={"#E95379"} size='md' variant='outline'>
-                                Resume
-                            </Button>
+                            {/* <Button bgColor={"#E95379"} size='md' variant='outline'> */}
+                                {/* Resume */}
+                            {/* </Button> */}
                         </Stack>
                     </Box>
                 </Flex>

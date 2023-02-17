@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "format": "prettier --write ./*.{js,ts} ./pages/**/*.{ts,tsx} ./components/**/*.tsx"
+        "format": "prettier --write ./*.{js,ts} ./pages/**/*.{ts,tsx} ./components/**/*.tsx",
+        "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
     },
     "dependencies": {
         "@chakra-ui/icons": "^2.0.4",

@@ -2,7 +2,7 @@
 gh-pages
 gh-pages.pub
 
-/.vscode
+/.vscode/
 
 # dependencies
 /node_modules
