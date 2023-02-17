@@ -13,7 +13,7 @@ const Contact = () => {
 		<Box
 			id='contact'
 			minH='100vh'
-			bg='#232530'
+			bg='#2E303E'
 			display='flex'
 			flexDirection='column'
 			justifyContent='center'

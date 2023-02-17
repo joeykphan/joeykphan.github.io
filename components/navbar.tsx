@@ -7,7 +7,8 @@ import {
     useDisclosure,
     Text,
 } from '@chakra-ui/react'
-import { Link } from 'react-scroll'
+import Link from 'next/link'
+// import { Link } from 'react-scroll'
 import React from 'react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
@@ -38,7 +39,7 @@ const Navbar = () => {
                     color="black"
                 >
                     <Flex align="center" mr={2}>
-                        <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
+                        <Link href={"/"} >
                             {/* <Button bgColor={"#E95379"} size='lg'> */}
                                 <Text color={"#E95379"} fontSize='lg' >Joseph Phan</Text>
                             {/* </Button> */}
@@ -64,22 +65,22 @@ const Navbar = () => {
                             flexGrow={1}
                             mt={{ base: 225, md: 0 }}
                         >
-                            <Link activeClass="active" to="whoami" spy={true} smooth={true} duration={1000}>
+                            <Link href={"/"} >
                                 {/* <Button bgColor={"#E95379"} size='md'> */}
                                 <Text color={"#E95379"} fontSize='lg' >0. Home</Text>
                                 {/* </Button> */}
                             </Link>
-                            <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
+                            <Link href={"/about"} >
                                 {/* <Button bgColor={"#E95379"} size='md'> */}
                                 <Text color={"#E95379"} fontSize='lg' >1. About</Text>
                                 {/* </Button> */}
                             </Link>
-                            <Link activeClass="active" to="experience" spy={true} smooth={true} duration={1000}>
+                            <Link href={"/experience"} >
                                 {/* <Button bgColor={"#E95379"} size='md'> */}
                                 <Text color={"#E95379"} fontSize='lg' >2. Experience</Text>
                                 {/* </Button> */}
                             </Link>
-                            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
+                            <Link href={"/contact"} >
                                 {/* <Button bgColor={"#E95379"} size='md'> */}
                                 <Text color={"#E95379"} fontSize='lg' >3. Contact</Text>
                                 {/* </Button> */}
